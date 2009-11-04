@@ -1,6 +1,5 @@
 === Gweather ===
 Contributors: mouring
-Donate link: http://kruyt.org
 Tags: rss, atom, feed, inline, embed, rdf, weather, google
 Requires at least: 2.5
 Tested up to: 2.8.5
