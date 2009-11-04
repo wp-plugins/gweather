@@ -37,6 +37,7 @@ Examples:
 
 Finally note the whole thing must be on ONE line.  No line breaks or else it won't work.
 
+There is no styling in the table, but the table is generated with a class of gweather. So you can style the look of the output by adding a class for that in your stylesheet
 
 1.0 Initial release.
 
