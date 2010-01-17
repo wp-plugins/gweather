@@ -2,12 +2,12 @@
 
 /*
 Plugin Name: Gweather
-Plugin URI: http://www.citynews.co.za/
+Plugin URI: http://www.smesolutions.co.za/
 Description: Get the current weather conditions and the forecast weather for your chosen city in Celcius or Farhenheit
 Author: Mouring Kolhoff
-Version: 1.00
+Version: 1.10
 License: GPL
-Author URI: http://www.citynews.co.za
+Author URI: http://www.smesolutions.co.za
 Min WP Version: 2.5
 */ 
 
@@ -16,8 +16,9 @@ add_shortcode('gweather', 'gweather_func');
 
 
 function gweather_c($city,$country,$credit) {
-    if($credit=="1")
-	{$credit_url="<tr><td colspan='4'>Weather Plugin Courtesy of <a class='wp-link' href='http://www.citynews.co.za' title='City News South Africa'>City News South Africa</a></td></tr>";}
+    $city=str_replace ( ' ', '%20', $city );
+	if($credit=="1")
+	{$credit_url="<tr><td colspan='4'>Weather Plugin Courtesy of <a class='wp-link' href='http://www.atoz.co.za' title='AtoZ Business Directory South Africa'>AtoZ Business Directory South Africa</a></td></tr>";}
     $string = "<!-- start of gweather content by gweather plugin v1.00 - http://www.citynews.co.za -->\n";
 	$img_url = "http://www.google.com";
 	$weather_url = "http://www.google.com/ig/api?weather=$city,$country";
@@ -50,7 +51,8 @@ function gweather_c($city,$country,$credit) {
 }
 
 function gweather_f($city,$country,$credit) {
-    if($credit=="1")
+    $city=str_replace ( ' ', '%20', $city );
+	if($credit=="1")
 	{$credit_url="<tr><td colspan='4'>Weather Plugin Courtesy of <a class='wp-link' href='http://www.citynews.co.za' title='City News South Africa'>City News South Africa</a></td></tr>";}
     $string = "<!-- start of gweather content by gweather plugin v1.00 - http://www.citynews.co.za -->\n";
 	$img_url = "http://www.google.com";

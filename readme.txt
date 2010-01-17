@@ -2,7 +2,7 @@
 Contributors: mouring
 Tags: rss, atom, feed, inline, embed, rdf, weather, google
 Requires at least: 2.5
-Tested up to: 2.8.5
+Tested up to: 2.9.1
 Stable tag: 1.00
 
 With the gweather plugin you can display and embed Google Weather Feeds in your Wordpress posts and pages.
@@ -39,8 +39,8 @@ Finally note the whole thing must be on ONE line.  No line breaks or else it won
 
 There is no styling in the table, but the table is generated with a class of gweather. So you can style the look of the output by adding a class for that in your stylesheet
 
-1.0 Initial release.
-
+1.00 Initial release.
+1.10 Bug Fix Cities with spaces where not renedered properly
 == Installation ==
 
 Just unzip in your plugin folder, and actived in your wordpress admin panel.
